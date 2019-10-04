@@ -104,3 +104,6 @@ static_cdn/
 
 # mypy
 .mypy_cache/
+
+#npm
+node_modules/
