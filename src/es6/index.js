@@ -11,4 +11,5 @@ const component = () => {
   return element
 }
 
-document.body.appendChild(component())
+const mainContent = document.querySelector('.main-content')
+mainContent.appendChild(component())

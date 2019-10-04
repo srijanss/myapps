@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'hjzua#&cnz#4858$r(##g^$g9!n1ve&8il2u)u#yfn*8*q2@r)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['srijanmanandhar.com', 'localhost']
 
@@ -77,7 +77,8 @@ WSGI_APPLICATION = 'myapps.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': config('DB_NAME', ''),
         'USER': config('DB_USER', ''),
         'PASSWORD': config('DB_PWD', ''),

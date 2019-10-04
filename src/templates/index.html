@@ -1,12 +1,12 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
-<!-- Doctype html -->
-<html>
-  <head>
-    <title>Welcome</title>
-  </head>
-  <body>
-    <h1>Coming Soon...</h1>
-    <script src="{% static 'js/index.bundle.js' %}"></script>
-    <script src="{% static 'js/print.bundle.js' %}"></script>
-  </body>
-</html>
+{% block head_title %}
+Homepage | {{ block.super }}
+{% endblock head_title %}
+{% block content%}
+  <h1>Coming Soon...</h1>
+{% endblock content%}
+{% block extra_js %}
+  <script src="{% static 'js/index.bundle.js' %}"></script>
+  <script src="{% static 'js/print.bundle.js' %}"></script>
+{% endblock extra_js %}
