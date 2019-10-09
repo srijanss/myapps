@@ -4,9 +4,13 @@
 Homepage | {{ block.super }}
 {% endblock head_title %}
 {% block content%}
-  <h1>Coming Soon...</h1>
+  <p id="number-of-sets"></p>
+  <button id="reset-btn" type="button">Reset</button>
+  <section class="main-content">
+    <h1></h1>
+  </section>
 {% endblock content%}
 {% block extra_js %}
+  <script src="{% static 'js/timer.bundle.js' %}"></script>
   <script src="{% static 'js/index.bundle.js' %}"></script>
-  <script src="{% static 'js/print.bundle.js' %}"></script>
 {% endblock extra_js %}

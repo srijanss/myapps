@@ -4,8 +4,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   entry: {
     index: './src/es6/index.js',
-    print: './src/es6/print.js',
+    timer: './src/es6/timer.js',
   },
+  devtool: 'inline-source-map',
   plugins: [
     new CleanWebpackPlugin(),
   ],
